@@ -4,13 +4,13 @@
 
 
 .nav-link{
-    color: white !important;
     font-size: 17.7592px;
     font-weight: normal;
 }
 
 .active{
     background: #E20303;
+    color: white !important;
     border-radius: 2px;
 }
 
@@ -24,6 +24,11 @@ font-weight: 500;
 font-size: 16px;
 }
 
+.botoncitoActivo{
+    background-color: #E20303;
+    color: #FFFFFF;
+}
+
 
 .backgrundImage{
     background: linear-gradient(180deg, #070707 0%, rgba(7, 7, 7, 0) 100%);
@@ -31,6 +36,7 @@ font-size: 16px;
     height: 100vh;
     background-size: cover;
     background-position:center ;
+    background-position:top ;
     background-repeat: no-repeat;
     position: relative;
 }
@@ -43,12 +49,15 @@ font-size: 16px;
     mix-blend-mode: normal;
     backdrop-filter: blur(7px);
     border-radius: 6.04997px;
+    margin-bottom: 100px;
 }
 
 .card-titlee{
     color: #FFFFFF;
     font-size: 90.9495px;
     font-weight: bold;
+    line-height: 86px;
+    margin-bottom: 35px;
 }
 
 .card-text{
