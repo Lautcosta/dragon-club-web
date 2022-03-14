@@ -3,6 +3,7 @@
     font-style: normal;
 }
 
+/*------------------------GENERAL------------------------*/
 .nav-link{
     font-weight: 400;
     font-size: 17.7592px;
@@ -31,10 +32,10 @@
     color: #FFFFFF;
 }
 
-
+/* ------------------------INDEX------------------------ */
 .backgrundIndex{
     height: 100%;
-    background: url(/assets/mapa.svg);
+    background: url(../assets/mapa.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -52,7 +53,6 @@
     background:  linear-gradient(180deg, #070707 3.75%, rgba(7, 7, 7, 0.949081) 18.59%, rgba(6, 6, 6, 0.853495) 33.88%, rgba(0, 0, 0, 0) 74.36%);
     z-index: -1;
 }
-
 
 /* Card Index */
 .cardIndex{
@@ -89,7 +89,7 @@
 }
 /* Card Index */
 
-/* MarketPlace */
+/*------------------------ MARKETPLACE------------------------ */
 .rojoMarket{
     color: #E20303;
 }
@@ -118,7 +118,7 @@
 }
 
 .backgrundMarketplace{
-    background: url(/assets/bgMarketplace.svg);
+    background: url(../assets/bgMarketplace.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -139,7 +139,7 @@
 }
 
 .tarjeta1{
-    background: url(/assets/card1.svg);
+    background: url(../assets/card1.svg);
     background-position: center;
     background-position: top;
     background-size: cover;
@@ -158,4 +158,52 @@
 .cardMarket{
     border-radius: 10px;
     background: none;
+}
+
+/*------------------------CONTACT------------------------ */
+
+
+/*------------------------APPLY------------------------ */
+.backgrundApply{
+    height: 100%;
+    background: url(../assets/bgApply.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top ;
+}
+
+.backgrundApply::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(30, 30, 30, 0) -1.37%, rgba(15, 15, 15, 0.634267) 26.68%, rgba(9, 9, 9, 0.921093) 67.5%, #070707 89.36%);
+    z-index: -1;
+    transform: rotate(-180deg);
+}
+
+
+.titleAplly{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 83.8523px;
+    line-height: 100px;
+    /* or 90px */
+    color: #FFFFFF;
+}
+
+
+.textAplly{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 27.7188px;
+line-height: 117%;
+/* or 32px */
+color: #FFFFFF;
 }
