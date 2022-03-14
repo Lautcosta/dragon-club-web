@@ -1,11 +1,12 @@
 *{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins';
+    font-style: normal;
 }
 
-
 .nav-link{
+    font-weight: 400;
     font-size: 17.7592px;
-    font-weight: normal;
+    line-height: 27px;
 }
 
 .active{
@@ -15,13 +16,14 @@
 }
 
 .botoncito{
-background: #FFFFFF;
-border-radius: 12px;
-color: #5F0000;
-padding-left: 40px !important;
-padding-right: 40px !important;
-font-weight: 500;
-font-size: 16px;
+    background: #FFFFFF;
+    border-radius: 12px;
+    color: #5F0000;
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 .botoncitoActivo{
@@ -30,8 +32,7 @@ font-size: 16px;
 }
 
 
-.backgrundImage{
-    background: linear-gradient(180deg, #070707 0%, rgba(7, 7, 7, 0) 100%);
+.backgrundIndex{
     height: 100%;
     background: url(/assets/mapa.svg);
     background-repeat: no-repeat;
@@ -41,9 +42,20 @@ font-size: 16px;
     background-position: top ;
 }
 
+.backgrundIndex::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:  linear-gradient(180deg, #070707 3.75%, rgba(7, 7, 7, 0.949081) 18.59%, rgba(6, 6, 6, 0.853495) 33.88%, rgba(0, 0, 0, 0) 74.36%);
+    z-index: -1;
+}
+
 
 /* Card Index */
-.card{
+.cardIndex{
     padding: 3rem;
     background: rgba(3, 3, 3, 0.65);
     mix-blend-mode: normal;
@@ -55,24 +67,94 @@ font-size: 16px;
 .card-titlee{
     color: #FFFFFF;
     font-size: 90.9495px;
-    font-weight: bold;
     line-height: 86px;
     margin-bottom: 35px;
+    font-weight: 700;
 }
 
-.card-text{
+.card-text-index{
     color: #FFFFFF;
-    font-weight: normal;
     font-size: 28.7687px;
-    line-height: 43px;
+    line-height: 43px;    
+    font-weight: 400;
 }
 
-.cardBtn{
+.cardBtnIndex{
     background: linear-gradient(271.88deg, #9C0909 21.88%, #FF0000 114.79%);
     box-shadow: 20.6176px 28.8646px 58.7601px 4.12352px rgba(255, 0, 0, 0.3);
     border-radius: 10px;
     color: #FFFFFF;
-    font-style: normal;
     font-weight: 500;
+    font-size: 18.5558px;
 }
 /* Card Index */
+
+/* MarketPlace */
+.rojoMarket{
+    color: #E20303;
+}
+
+.titleMarket{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 71.6353px;
+    line-height: 115px;
+}
+
+.subTitleMarket {
+    font-weight: 400;
+    font-size: 28.7687px;
+    line-height: 37px;
+}
+
+@media (max-width: 600px) {
+    .titleMarket{
+        font-size: 40px;
+    }
+    
+    .subTitleMarket {
+        font-size: 20px;
+    }
+}
+
+.backgrundMarketplace{
+    background: url(/assets/bgMarketplace.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+}
+
+.backgrundMarketplace::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(7, 7, 7, 0.9491);
+    z-index: -1;
+}
+
+.tarjeta1{
+    background: url(/assets/card1.svg);
+    background-position: center;
+    background-position: top;
+    background-size: cover;
+    width: 574.34px;
+    height: 324.88px;
+}
+
+.cardMarket:hover{
+    transform: scale(1.1);
+    transition: all linear 200ms;
+    z-index: 1;
+    box-shadow: 1px 1px 10px rgba(0,0,0,.3);
+    cursor: pointer;
+}
+
+.cardMarket{
+    border-radius: 10px;
+    background: none;
+}
