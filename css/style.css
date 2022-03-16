@@ -90,7 +90,7 @@
 /* Card Index */
 
 /*------------------------ MARKETPLACE------------------------ */
-.rojoMarket{
+.rojo{
     color: #E20303;
 }
 
@@ -147,7 +147,7 @@
     height: 324.88px;
 }
 
-.cardMarket:hover{
+.cardMarketAnimation:hover{
     transform: scale(1.1);
     transition: all linear 200ms;
     z-index: 1;
@@ -157,19 +157,43 @@
 
 .cardMarket{
     border-radius: 10px;
-    background: none;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 31.6%, rgba(0, 0, 0, 0.6) 73.45%);
+}
+
+.card-title-market{
+    font-weight: 800;
+    font-size: 45.4795px;
+    line-height: 56px;
+    color: #FFFFFF;
+}
+
+.card-text-market{
+    font-weight: 400;
+    font-size: 17.6865px;
+    line-height: 144%;
+    color: #FFFFFF;
+}
+
+.btn-market{
+    width: 151.77px;
+    height: 46.02px;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1.26332px solid #FFFFFF;
+    border-radius: 10px;
+    font-weight: 800;
+    font-size: 20.2131px;
+    color: #FFFFFF;
 }
 
 /*------------------------CONTACT------------------------ */
 .bgContact{
-  background: url(../assets/bgContact.svg); 
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: top;
+background: url(../assets/bgContact.svg); 
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+background-attachment: fixed;
+background-position: top;
 }
-
 
 .bgContact::after {
     content: "";
@@ -180,8 +204,37 @@
     height: 100%;
     background:rgba(7, 7, 7, 0.9491);
     z-index: -1;
-    position: fixed;
-   
+    position: fixed;   
+}
+
+.titleContact{    
+    font-weight: 500;
+    font-size: 63.2297px;
+    line-height: 60px;
+    color: #FFFFFF;
+}
+
+.textContact{
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 25.6608px;
+    line-height: 30px;
+}
+
+.btnDiscord{
+    position: absolute;
+    color: #FFFFFF;
+    width: 253px;
+    height: 63.8px;
+    background: linear-gradient(271.88deg, #063F57 19.73%, #0C94CE 114.79%);
+    box-shadow: 22.6793px 31.7511px 64.6361px 4.53587px rgba(12, 148, 206, 0.3);
+    border-radius: 11.3397px;
+}
+
+.contactUs{
+    font-weight: 700;
+    font-size: 51.1463px;
+    line-height: 68px;
 }
 
 
