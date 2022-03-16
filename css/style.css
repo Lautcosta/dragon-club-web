@@ -161,10 +161,32 @@
 }
 
 /*------------------------CONTACT------------------------ */
+.bgContact{
+  background: url(../assets/bgContact.svg); 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top;
+}
+
+
+.bgContact::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(7, 7, 7, 0.9491);
+    z-index: -1;
+    position: fixed;
+   
+}
 
 
 /*------------------------APPLY------------------------ */
-.backgrundApply{
+.bgApply{
     height: 100%;
     background: url(../assets/bgApply.svg);
     background-repeat: no-repeat;
@@ -174,7 +196,7 @@
     background-position: top ;
 }
 
-.backgrundApply::after {
+.bgApply::after {
     content: "";
     position: absolute;
     top: 0;
@@ -207,3 +229,5 @@ line-height: 117%;
 /* or 32px */
 color: #FFFFFF;
 }
+
+
