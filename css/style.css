@@ -95,7 +95,6 @@
 }
 
 .titleMarket{
-    font-style: normal;
     font-weight: 700;
     font-size: 71.6353px;
     line-height: 115px;
@@ -221,16 +220,6 @@ background-position: top;
     line-height: 30px;
 }
 
-.btnDiscord{
-    position: absolute;
-    color: #FFFFFF;
-    width: 253px;
-    height: 63.8px;
-    background: linear-gradient(271.88deg, #063F57 19.73%, #0C94CE 114.79%);
-    box-shadow: 22.6793px 31.7511px 64.6361px 4.53587px rgba(12, 148, 206, 0.3);
-    border-radius: 11.3397px;
-}
-
 .contactUs{
     font-weight: 700;
     font-size: 51.1463px;
@@ -259,12 +248,12 @@ background-position: top;
     background: linear-gradient(180deg, rgba(30, 30, 30, 0) -1.37%, rgba(15, 15, 15, 0.634267) 26.68%, rgba(9, 9, 9, 0.921093) 67.5%, #070707 89.36%);
     z-index: -1;
     transform: rotate(-180deg);
+    mix-blend-mode: normal;
+    backdrop-filter: blur(7px);
 }
 
 
 .titleAplly{
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 700;
     font-size: 83.8523px;
     line-height: 100px;
@@ -274,13 +263,126 @@ background-position: top;
 
 
 .textAplly{
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 27.7188px;
-line-height: 117%;
-/* or 32px */
-color: #FFFFFF;
+    font-weight: 400;
+    font-size: 27.7188px;
+    line-height: 117%;
+    /* or 32px */
+    color: #FFFFFF;
 }
 
 
+/*------------------------ABOUT US------------------------ */
+.aboutText{
+    font-weight: 400;
+    font-size: 27.7188px;
+    line-height: 125%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.bgAbout{
+    height: 100%;
+    background: url(../assets/bgAboutUs.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top ;
+}
+
+.bgAbout::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transform: rotate(-180deg);
+    background: linear-gradient(180deg, rgba(30, 30, 30, 0) -1.37%, rgba(15, 15, 15, 0.634267) 25.11%, #070707 97.27%);
+    mix-blend-mode: normal;
+    backdrop-filter: blur(7px);
+    transform: rotate(-180deg);
+}
+
+.teamAbout{
+    background: rgba(3, 3, 3, 0.65);
+    mix-blend-mode: normal;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(7px);
+
+    border-radius: 28px;
+}
+
+.imageAbout{
+    width: 200px;
+    height: 200px;
+}
+
+.textName{
+    font-weight: 400;
+    font-size: 25.1165px;
+    line-height: 38px;
+
+    color: #FFFFFF;
+}
+
+.textPosition{
+    font-weight: 400;
+    font-size: 16.3723px;
+    line-height: 25px;
+
+    color: #FFFFFF;
+}
+
+
+/* Botones */
+
+.btnTwitter{
+    background: linear-gradient(271.88deg, #063F57 19.73%, #0C94CE 114.79%);
+    box-shadow: 22.6793px 31.7511px 64.6361px 4.53587px rgba(12, 148, 206, 0.3);
+    border-radius: 11.3397px;
+    font-weight: 500;
+    font-size: 22.0131px;
+    line-height: 29px;
+    color: #FFFFFF;
+    width: 253px;
+    height: 63.8px;
+    border: none;
+}
+
+.btnInstagram{
+    background: linear-gradient(271.88deg, #9C0996 0%, #DB0436 114.79%);
+    box-shadow: 22.6793px 31.7511px 64.6361px 4.53587px rgba(203, 4, 78, 0.35);
+    border-radius: 11.3397px;
+    font-weight: 500;
+    font-size: 22.0131px;
+    line-height: 29px;
+    color: #FFFFFF;
+    width: 253px;
+    height: 63.8px;
+    border: none;
+}
+
+.btnYoutube{
+    background: linear-gradient(271.88deg, #9C0909 19.73%, #E20303 114.79%);
+    box-shadow: 22.6793px 31.7511px 64.6361px 4.53587px rgba(207, 4, 4, 0.35);
+    border-radius: 11.3397px;
+    font-weight: 500;
+    font-size: 22.0131px;
+    line-height: 29px;
+    color: #FFFFFF;
+    width: 253px;
+    height: 63.8px;
+    border: none;
+}
+
+.btnDiscord{
+    color: #FFFFFF;
+    width: 253px;
+    height: 63.8px;
+    background: linear-gradient(271.88deg, #063F57 19.73%, #0C94CE 114.79%);
+    box-shadow: 22.6793px 31.7511px 64.6361px 4.53587px rgba(12, 148, 206, 0.3);
+    border-radius: 11.3397px;
+    border: none;
+}
